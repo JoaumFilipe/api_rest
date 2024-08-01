@@ -1,10 +1,9 @@
 import fastify from 'fastify'
+import routes from './routes'
 
 const server = fastify()
 
-//rotas gets
-server.get('/', () => {
-  return 'hello world!'
-})
+// Rotas do server
+server.register(routes)
 
 export default server
