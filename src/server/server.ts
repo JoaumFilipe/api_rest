@@ -1,5 +1,5 @@
 import fastify from 'fastify'
-import routes from './routes'
+import routes from './routes/index.js'
 
 const server = fastify()
 
